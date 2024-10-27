@@ -90,9 +90,9 @@ header h1 {
 }
 
 .container2 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
 
 .container2 img {
@@ -104,11 +104,8 @@ header h1 {
 }
 
 .image-5 {
-    width: 100px;
-    height: 30px;
-    top: 350px;
-    left: 50px;
-    position: absolute;
+    width: 15vh;
+    height: 4.5vh;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
@@ -116,17 +113,17 @@ header h1 {
 }
 
 .image-6 {
-    width: 100px;
-    height: 30px;
-    top: 150px;
-    left: 1050px;
+    width: 15vh;
+    height: 4.5vh;
+    top: 25%;
+    left: 65%;
 }
 
 .image-7 {
-    width: 100px;
-    height: 30px;
-    top: 400px;
-    left: 1400px;
+    width: 15vh;
+    height: 4.5vh;
+    top: 50%;
+    left: 90%;
 }
 
 @keyframes moveUpDown {
