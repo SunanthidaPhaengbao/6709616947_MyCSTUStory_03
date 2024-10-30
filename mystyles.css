@@ -574,18 +574,20 @@ article .myft {
     header {
         margin: 3%;
     }
-    
+    nav .index, .myfuture, .myjourney{
+        width: 15%;
+    }
     .index {
-        top: 1%;
+        top: 2%;
         left: 5%;
     }
     .myfuture {
-        top: 4%;
+        top: 6%;
         left: 5%;
     }
     
     .myjourney {
-        top: 7%;
+        top: 10%;
         left: 5%;
     }
     .profile img {
