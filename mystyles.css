@@ -574,6 +574,14 @@ article .myft {
     header {
         margin: 3%;
     }
+
+    header .mycstustory {
+        width: 75%;
+        top: 75px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
     nav .index, .myfuture, .myjourney{
         width: 15%;
     }
