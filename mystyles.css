@@ -10,11 +10,16 @@ body {
 }
 
 header {
-    position: relative;margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    margin: 1%;
+    z-index: 1000;
 }
 
 header .mycstustory {
-    position: absolute;
+    position: sticky;
     color: #ffffff;
     font-family: "Palanquin Dark", sans-serif;
     font-weight: 700;
@@ -27,8 +32,8 @@ header .mycstustory {
     padding-right: 30px;
     border-radius: 100px;
     padding-bottom: 10px;
+    justify-content: flex-end;
     
-    right: 1%;
 }
 
 /*ปุ่มนำทาง*/
@@ -42,9 +47,12 @@ nav a:link, a:visited {
     font-size: 15px;
     padding: 2px;
 }
-
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed ;
+}
 nav .index , .myfuture , .myjourney {
-    position: fixed !important;
     border-radius: 50px;
     background: #ffffff;
     width: 90px;
@@ -569,7 +577,7 @@ article .myft {
 }
 
 /*tablet*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 481px) and (max-width: 1024px) {
 
     header {
         margin: 3%;
@@ -580,23 +588,16 @@ article .myft {
         top: 75px;
         left: 50%;
         transform: translate(-50%,-50%);
+    }
 
+    header nav {
+        position: sticky;
+        z-index: 1000;
+        justify-content: center;
     }
     nav .index, .myfuture, .myjourney{
-        width: 15%;
-    }
-    .index {
-        top: 2%;
-        left: 5%;
-    }
-    .myfuture {
-        top: 6%;
-        left: 5%;
-    }
-    
-    .myjourney {
-        top: 10%;
-        left: 5%;
+        width: 200px;
+        
     }
     .profile img {
         height: 70vh;
@@ -632,11 +633,13 @@ article .myft {
 }
 
 /*phone*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width:480px) {
     body {
         background-color: rgb(255, 0, 0);
     }
-    
+    header {
+        flex-direction: column;
+    }
 
 
 }
