@@ -32,7 +32,7 @@ header .mycstustory {
     padding-right: 30px;
     border-radius: 100px;
     padding-bottom: 10px;
-    position: fixed;
+    
 }
 
 /*ปุ่มนำทาง*/
@@ -59,7 +59,7 @@ nav .index , .myfuture , .myjourney {
     z-index: 1000;
     box-shadow: 3.5px 3.5px 0 0 rgb(96, 84, 0);
     text-align: center;
-    position: fixed ; 
+     
 }
 
 .index {
@@ -561,6 +561,17 @@ article .myft {
     border-radius: 25px;
 }
 
+/*desktop*/
+@media screen and (min-width: 1025px) {
+    header .mycstustory {
+        position: fixed;
+    }
+    nav .index , .myfuture , .myjourney {
+        position: fixed;
+    }
+
+}
+
 /*tablet*/
 @media screen and (min-width: 481px) and (max-width: 1024px) {
 
@@ -568,27 +579,29 @@ article .myft {
         margin: 3%;
         justify-content: center;
         position: sticky;
+        width: 100%;
     }
 
     header .mycstustory {
         width: 75%;
-        top: 70px;
+        top: 85px;
         left: 50%;
         transform: translate(-50%,-50%);
-        position: absolute;
+        position: fixed;
         
     }
 
     header nav {
         width: 75%;
-        top: 150px;
-        left: 63%;
+        top: 200px;
+        left: 50%;
         transform: translate(-50%,-50%);
-        position: absolute;
+        position: fixed;
+        justify-content: space-evenly;
     }
     
     nav .index, .myfuture, .myjourney{
-        width: 100px;
+        width: 175px;
         z-index: 1000;
         
     }
@@ -622,12 +635,17 @@ article .myft {
     }
     article {
         left: 111px;
-        top: 75px;
+        top: 60px;
     }
     .cards {
         position: absolute;
         left:75px;
-        top: 90px;
+        top:950px;
+    }
+    video {
+        top: 1050px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 
@@ -641,6 +659,12 @@ article .myft {
     }
     header {
         flex-direction: column;
+    }
+    header .mycstustory {
+        font-size: 40px;
+    }
+    nav {
+        justify-content: center;
     }
 
 
