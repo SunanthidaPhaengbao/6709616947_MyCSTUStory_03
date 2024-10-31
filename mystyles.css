@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     position: relative;
     margin: 1%;
     z-index: 1000;
@@ -50,7 +50,7 @@ nav a:link, a:visited {
 nav {
     display: flex;
     flex-wrap: wrap;
-    position: fixed ;
+    
 }
 nav .index , .myfuture , .myjourney {
     border-radius: 50px;
@@ -59,7 +59,8 @@ nav .index , .myfuture , .myjourney {
     height: 30px;
     z-index: 1000;
     box-shadow: 3.5px 3.5px 0 0 rgb(96, 84, 0);
-    text-align: center; 
+    text-align: center;
+    position: fixed ; 
 }
 
 .index {
@@ -217,7 +218,7 @@ footer .wave-inner {
     url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23fcc900' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23fcc900' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
     background-repeat: repeat-x;
     width: 100%;
-    height: 100vh;
+    height: 81vh;
     background-position: 0px 100%, -50px 100%, 500px 100%;
     animation: 15s waves linear infinite forwards;
     position: absolute;
