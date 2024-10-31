@@ -654,18 +654,97 @@ article .myft {
 
 /*phone*/
 @media screen and (min-width: 320px) and (max-width:480px) {
-    body {
-        background-color: rgb(255, 0, 0);
-    }
     header {
         flex-direction: column;
     }
     header .mycstustory {
         font-size: 40px;
+       
     }
     nav {
         justify-content: center;
+
     }
+    .profile img {
+        height:50vh;
+    }
+    .image-8 {
+        top:125%;
+        z-index: 998;
+    }
+    video {
+        top:900px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    footer {
+      z-index: 997;  
+    }
+    footer .wave-inner{
+        height: 76vh;
+        
+    }
+    .cards {
+        position: absolute;
+        top:750px;
+        left:-35%;
+        transform: translateX(-50%);
+
+    }
+    article {
+        position:relative;
+        left: 0;
+        top: 150px;
+        font-size: 20px;
+        z-index: 999;
+    }
+
+    .ttprofile {
+        display: none;
+    }
+    article div {display:flex;justify-content: center;
+
+    }
+    article.textprofile {
+        justify-content: center;
+    }
+    .textprofile {
+        top: 25vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .image-1 {
+        top: 0;
+        left: -5%;
+        z-index: 998;
+    }
+    .image-2 {
+        width: 50vh;
+        height: 50vh;
+        top: 10%;
+        left: 5%;
+    }
+    .image-3 {
+        width: 20vh;
+        height: 20vh;
+        top: 0%;
+        left: 22%;
+    }
+    .image-4 {
+        display: none;
+    }
+    .image-5 {
+        width: 10vh;
+    height: 3vh;
+    top: 15%;
+    left: 4%;
+    z-index: 998;
+    }
+    }
+    
+
 
 
 }
