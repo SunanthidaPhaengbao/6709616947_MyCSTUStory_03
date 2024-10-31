@@ -7,6 +7,7 @@ body {
     position: relative;
     font-family: monospace;
     margin: 0;
+    
 }
 
 header {
@@ -258,27 +259,38 @@ footer .wave-inner {
     z-index: 999;
 }
 
+article {
+    position: absolute;
+    left: 25px;
+    z-index: 997;
+}
+article p {
+    position: relative;
+    letter-spacing: -0.8px;
+    font-size: 15%;
+}
 
-.ttprofile {
+article .ttprofile {
     position: relative;
     background: rgb(212, 187, 1);
-    width: 80px;
+    width: 90px;
     height: 30px;
     top: 165px;
-    left: 90px;
+    left: 125px;
     z-index: 998;
     border-radius: 50px;
     text-align: center;
 }
 
-
-
-article:hover figure{
-    transform: translateY(-20px);
-    z-index: 990;
+.textprofile p  {
+    position: relative;
+    top: 7px;
+    color: rgb(96, 84, 0);
+    font-size: 16px;
+    letter-spacing: -0.8px;
 }
 
-h3 {
+.ttprofile h3 {
     color: #ffffff;
     top: 6px;
     position: relative;
@@ -297,22 +309,6 @@ h3 {
     z-index: 997;
     text-align: left;
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
-}
-
-article:hover .textprofile {
-    z-index: 1000;
-    width: 320px;
-    height: 150px;
-    top: 195px;
-    left: 95px;
-}
-
-.textprofile p  {
-    position: relative;
-    top: 7px;
-    color: rgb(96, 84, 0);
-    font-size: 16px;
-    letter-spacing: -0.8px;
 }
 
 .cards .ins, .beta {
@@ -457,17 +453,7 @@ article .tfirst, .tsecond, .tthird, .tfourth {
 
 
 
-article {
-    position: absolute;
-    margin-left: 25px;
-    padding-right: 25px;
-}
 
-article p {
-    position: relative;
-    letter-spacing: -0.8px;
-    font-size: 15px;
-}
 
 
 
