@@ -586,9 +586,6 @@ article .myft {
         transform: translate(-50%,-50%);
         position: absolute;
     }
-    nav {
-    }
-
     
     nav .index, .myfuture, .myjourney{
         width: 100px;
@@ -622,6 +619,15 @@ article .myft {
     .image-7 {
         top: 77%;
         left: 87%;
+    }
+    article {
+        left: 111px;
+        top: 75px;
+    }
+    .cards {
+        position: absolute;
+        left:75px;
+        top: 90px;
     }
 
 
